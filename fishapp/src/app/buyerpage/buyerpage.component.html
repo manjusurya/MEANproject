@@ -1,0 +1,40 @@
+<div class='card'>
+    <div class='card-header'>
+        {{title}}
+        
+       
+    </div>
+    <div class='card-body'>
+        <div class='table-responsive'>
+            <table class='table'>
+                <thead>
+                    <tr>
+                      
+                        <th>Sellers</th>
+                        <th>Fishes</th>
+                        <th>Availability</th>
+                        <th>Price</th>
+                        <th>Contact details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor='let seller of sellers'>
+                       
+                        <td>{{seller.sellers}}</td>
+                        <td>{{seller.fishes}}</td>
+                        <td>{{seller.availability}}</td>
+                        <td>{{seller.price}}</td>
+                        <td>{{seller.contact}}</td>
+                        
+                       
+
+                       
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+

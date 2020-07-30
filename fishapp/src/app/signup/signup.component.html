@@ -1,0 +1,47 @@
+<div class='card'>
+    <form (ngSubmit)="AddProfile()">
+<div class='card-header'>
+    {{title}}
+    <a routerLink='/signup1'>.  Buyer Signup</a>
+</div> 
+<div class='card-body'>
+    <div class='table-responsive'>
+        <table class='table'>
+            <tbody>
+                
+                <tr>
+                    <td><label> Name</label></td>
+                    <td><input type="text" name="s_name"[(ngModel)]="signupItem.name"/></td>
+                </tr>
+                <tr>
+                    <td><label>Email</label></td>
+                    <td><input type="email" name="s_email"[(ngModel)]="signupItem.email"/></td>
+                </tr>
+                <tr>
+                    <td><label>Password</label></td>
+                    <td><input type="password" name="s_password"[(ngModel)]="signupItem.password"/></td>
+                </tr>
+               
+               
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="signup" /></td>
+                </tr>
+                
+
+
+
+
+
+
+
+            </tbody>
+        </table>
+
+    </div>
+</div>       
+    </form>
+
+</div>
+
+

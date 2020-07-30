@@ -1,0 +1,39 @@
+<div class='card'>
+    <div class='card-header'>
+        {{title}}
+       
+        <a routerLink='/add'>.   Add Sellers</a>
+    </div>
+    <div class='card-body'>
+        <div class='table-responsive'>
+            <table class='table'>
+                <thead>
+                    <tr>
+                      
+                        <th>Sellers</th>
+                        <th>Fishes</th>
+                        <th>Availability</th>
+                        <th>Price</th>
+                        <th>Contact details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor='let seller of sellers'>
+
+                        <td>{{seller.sellers}}</td>
+                        <td>{{seller.fishes}}</td>
+                        <td>{{seller.availability}}</td>
+                        <td>{{seller.price}}</td>
+                        <td>{{seller.contact}}</td>
+                        <td><button class="btn btn-danger" (click)='deleteSeller(seller._id)'>delete</button></td>
+                        <td><button class="btn btn-success"[routerLink]="['/edit',seller._id]">edit</button></td>
+
+                       
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+

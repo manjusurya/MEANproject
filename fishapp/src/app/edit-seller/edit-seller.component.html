@@ -1,0 +1,53 @@
+<div class='card'>
+    <form (ngSubmit)="EditSeller()">
+<div class='card-header'>
+    {{title}}
+</div> 
+<div class='card-body'>
+    <div class='table-responsive'>
+        <table class='table'>
+            <tbody>
+                
+                <tr>
+                    <td><label>Seller Name</label></td>
+                    <td><input type="text" name="s_name"[(ngModel)]="sellerItem.sellers"/></td>
+                </tr>
+                <tr>
+                    <td><label>Fishes</label></td>
+                    <td><input type="text" name="s_fish"[(ngModel)]="sellerItem.fishes"/></td>
+                </tr>
+                <tr>
+                    <td><label>Quantity InStock</label></td>
+                    <td><input type="text" name="s_availability"[(ngModel)]="sellerItem.availability"/></td>
+                </tr>
+               
+                <tr>
+                    <td><label>Price Per kg</label></td>
+                    <td><input type="text" name="s_price"[(ngModel)]="sellerItem.price"/></td>
+                </tr>
+                <tr>
+                    <td><label>Phone</label></td>
+                    <td><input type="text" name="s_phone"[(ngModel)]="sellerItem.contact"/></td>
+                </tr>
+                
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="edit" /></td>
+                </tr>
+
+
+
+
+
+
+
+            </tbody>
+        </table>
+
+    </div>
+</div>       
+    </form>
+
+</div>
+
+

@@ -1,0 +1,44 @@
+<div class='card'>
+    <form (ngSubmit)="FindProfile()">
+<div class='card-header'>
+    {{title}}
+    <a routerLink='/login1'>.   Buyer Login</a>
+</div> 
+<div class='card-body'>
+    <div class='table-responsive'>
+        <table class='table'>
+            <tbody>
+                
+               
+                <tr>
+                    <td><label>Email</label></td>
+                    <td><input type="email" name="s_email"[(ngModel)]="loginItem.email"/></td>
+                </tr>
+                <tr>
+                    <td><label>Password</label></td>
+                    <td><input type="password" name="s_password"[(ngModel)]="loginItem.password"/></td>
+                </tr>
+               
+               
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="login" /></td>
+                </tr>
+
+
+
+
+
+
+
+            </tbody>
+        </table>
+
+    </div>
+</div>       
+    </form>
+
+</div>
+
+
+
